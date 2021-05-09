@@ -11,14 +11,28 @@ ul {
     margin: 0;
     padding: 0;
 }
+h1, h2,h5 {
+    color: white;
+}
+p {
+    color: white;
+    opacity: 0.6;
+
+}
+
+section, footer {
+    padding: 3% 7%;
+}
+/* Navbar */
 .navbar-wrapper {
-    padding: 5% 7%;
+    padding: 5% 10%;
 }
 .header {
     background-color: hsl(217, 28%, 15%);
 }
 .navbar-wrapper .logo {
     float: left;
+    width: 15%;
 }
 .navbar li {
     display: inline;
@@ -31,4 +45,115 @@ ul {
 .navbar-link:hover {
     text-decoration: underline;
     color: white;
+}
+/* Section Intro */
+#intro {
+    background: hsl(217, 28%, 15%) url("../images/bg-curvy-desktop.svg") bottom no-repeat;
+    background-size: 100% 270px;
+
+}
+.intro-body {
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+
+}
+.intro-body img {
+    width: 75%;
+    margin: auto;
+}
+
+
+/* Button */
+.button {
+    padding-top: 5%;
+}
+.btn {
+	background-color: hsl(198, 60%, 50%);
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	padding:15px 35px;
+	text-decoration:none;
+    color: white;
+}
+.btn:hover {
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+
+}
+
+/* Features */
+
+
+#features {
+    background-color: hsl(217, 28%, 13%);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    text-align: center;
+    row-gap: 30px;
+}
+.features-item {
+    width: 70%;
+    margin: auto;
+}
+.features-item img {
+    width: 15%;
+}
+/* Fonctionnality */
+#fonction {
+    background-color: hsl(217, 28%, 13%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+#fonction img {
+    width: 80%;
+}
+#fonction .fonction-item-2 {
+    padding-top: 12%;
+    text-align: justify;
+}
+.fonction-item-2 a {
+    text-decoration: underline ;
+    color: hsl(176, 68%, 64%);
+}
+.icon-arrow {
+    width: 5px;
+    height: 50px;
+}
+/* Testimonials */
+#testimonials {
+    background-color: hsl(217, 28%, 13%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.profile img {
+    border-radius: 50%;
+    width: 10%;
+    padding-right: 10px;
+}
+.profile .profile-titre {
+    display: inline-block;
+    line-height: 0.1;
+    text-align: justify;
+}
+.profile-titre p {
+    font-size: 10px;
+}
+.testimonials-item {
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 8px 8px 8px 8px;
+    padding: 5% 7%;
+}
+
+/* Get Started */
+#get-started {
+    background-color: hsl(217, 28%, 15%);
+}
+
+footer {
+    background-color: hsl(217, 28%, 13%);
 }
