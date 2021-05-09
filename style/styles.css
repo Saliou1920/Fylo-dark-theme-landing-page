@@ -11,7 +11,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-h1, h2,h5 {
+h1, h2, h3, h5 {
     color: white;
 }
 p {
@@ -129,6 +129,8 @@ section, footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    position: absolute;
+    padding-bottom: 200px;
 }
 .profile img {
     border-radius: 50%;
@@ -145,15 +147,31 @@ section, footer {
 }
 .testimonials-item {
     background-color: hsl(219, 30%, 18%);
-    border-radius: 8px 8px 8px 8px;
     padding: 5% 7%;
 }
+.testimonials-item, #get-started {
+    border-radius: 8px 8px 8px 8px;
 
+}
 /* Get Started */
 #get-started {
     background-color: hsl(217, 28%, 15%);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 340px;
+}
+#get-started #email {
+    padding: 12px 20px;
+    width: 50%;
+    border: 1px solid white;
+	border-radius:25px;
+
 }
 
 footer {
-    background-color: hsl(217, 28%, 13%);
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 400px;
+
 }
