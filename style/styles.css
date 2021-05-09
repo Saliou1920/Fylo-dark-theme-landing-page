@@ -11,6 +11,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+ul li {
+    padding-bottom: 15px;
+}
 h1, h2, h3, h5 {
     color: white;
 }
@@ -113,7 +116,7 @@ section, footer {
 }
 #fonction .fonction-item-2 {
     padding-top: 12%;
-    text-align: justify;
+    text-align: left;
 }
 .fonction-item-2 a {
     text-decoration: underline ;
@@ -164,9 +167,10 @@ section, footer {
 }
 #get-started #email {
     padding: 12px 20px;
-    width: 50%;
+    width: 50% auto;
     border: 1px solid white;
 	border-radius:25px;
+    margin-right: 15px;;
 
 }
 
@@ -174,4 +178,43 @@ footer {
     background-color: hsl(216, 53%, 9%);
     padding-top: 400px;
 
+}
+footer a {
+    text-decoration: none;
+    color: grey;
+}
+footer a:hover {
+    color: white;
+}
+footer .logo {
+    padding-bottom: 30px;
+    width: 15%;
+}
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 60px;
+}
+
+
+.footer-text p {
+    display: inline;
+}
+.footer-text .pos {
+    display: inline-block;
+    text-align: justify;
+}
+
+.footer-contact img {
+    padding-right: 10px;
+}
+.social-logo {
+    padding-right: 15px;
+}
+.social-logo:hover, .attribution a:hover {
+    color: hsl(176, 68%, 64%);
+}
+.attribution {
+    text-align: center;
+    padding-top: 50px;
 }
