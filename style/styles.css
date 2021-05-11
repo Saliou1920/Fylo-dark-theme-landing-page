@@ -41,7 +41,7 @@ section, footer {
 }
 .navbar-wrapper .logo {
     float: left;
-    width: 15%;
+    width: 10%;
 }
 .navbar li {
     display: inline;
@@ -99,7 +99,7 @@ section, footer {
 #features {
     background-color: hsl(217, 28%, 13%);
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
     row-gap: 30px;
 }
@@ -114,7 +114,7 @@ section, footer {
 #fonction {
     background-color: hsl(217, 28%, 13%);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     text-align: center;
 }
 #fonction img {
@@ -172,8 +172,8 @@ section, footer {
     top: 340px;
 }
 #get-started #email {
-    padding: 12px 20px;
-    width: 50% auto;
+	padding:15px 35px;
+    width: 70%;
     border: 1px solid white;
 	border-radius:25px;
     margin-right: 15px;;
@@ -224,3 +224,34 @@ footer .logo {
     text-align: center;
     padding-top: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    #testimonials {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        position: absolute;
+        padding-bottom: 250px;
+    }
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    footer {
+        padding-top: 850px;
+
+    }
+    #get-started {
+        top: 800px;
+        
+    }
+
+
+    #fonction {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+  }
