@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot (My Solution) 💻 
 
-![](images/fylo_desktop.png)
+![](images/fylo_Desktop.png)
 ### Links
 
 Others website that I build 👇

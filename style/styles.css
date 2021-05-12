@@ -41,7 +41,7 @@ section, footer {
 }
 .navbar-wrapper .logo {
     float: left;
-    width: 10%;
+    width: 15%;
 }
 .navbar li {
     display: inline;
@@ -78,14 +78,20 @@ section, footer {
 .button {
     padding-top: 5%;
 }
-.btn {
-	background-color: hsl(198, 60%, 50%);
+.btn , .get-started-btn {
+    background-color: hsl(198, 60%, 50%);
 	border-radius:28px;
 	display:inline-block;
 	cursor:pointer;
-	padding:15px 35px;
 	text-decoration:none;
     color: white;
+}
+.btn {
+    padding:15px 100px;
+
+}
+.get-started-btn {
+    padding:15px 5%;
 }
 .btn:hover {
     background-color: hsl(176, 68%, 64%);
@@ -135,11 +141,11 @@ section, footer {
 /* Testimonials */
 #testimonials {
     background-color: hsl(217, 28%, 13%);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
+    display: flex;
+    direction: row;
     position: absolute;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
+    justify-content: center;
 }
 .profile img {
     border-radius: 50%;
@@ -156,7 +162,8 @@ section, footer {
 }
 .testimonials-item {
     background-color: hsl(219, 30%, 18%);
-    padding: 5% 7%;
+    padding: 3% 5%;
+    margin-right: 20px;
 }
 .testimonials-item, #get-started {
     border-radius: 8px 8px 8px 8px;
@@ -166,14 +173,14 @@ section, footer {
 #get-started {
     background-color: hsl(217, 28%, 15%);
     width: 60%;
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
     position: relative;
-    top: 340px;
+    top: 420px;
 }
-#get-started #email {
+#get-started .email {
 	padding:15px 35px;
-    width: 70%;
+    width: 40%;
     border: 1px solid white;
 	border-radius:25px;
     margin-right: 15px;;
@@ -197,11 +204,17 @@ footer .logo {
     width: 15%;
 }
 .footer-info {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    column-gap: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
 }
 
+
+.footer-text {
+    max-width: 500px;
+    flex-grow: 2;
+    width: 200px;
+}
 
 .footer-text p {
     display: inline;
@@ -213,6 +226,9 @@ footer .logo {
 
 .footer-contact img {
     padding-right: 10px;
+}
+.footer-contact p {
+    margin-top: 0;
 }
 .social-logo {
     padding-right: 15px;
@@ -226,12 +242,37 @@ footer .logo {
 }
 
 @media only screen and (max-width: 600px) {
+    .navbar-wrapper .logo, footer .logo {
+        width: 30%;
+    }
+    .navbar li {
+        padding: 5px;
+        font-size: 12px;
+      }
+
+    .intro-body {
+        text-align: center;
+        width: 90%;
+    }
+    #features {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .features-item {
+        width: 100%;
+        margin: 0;
+    }
+  
     #testimonials {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 30px;
         position: absolute;
         padding-bottom: 250px;
+    }
+    .testimonials-item {
+        margin-right: 0;
     }
     .footer-info {
         display: grid;
@@ -240,11 +281,13 @@ footer .logo {
     }
 
     footer {
-        padding-top: 850px;
+        padding-top: 750px;
 
     }
+
     #get-started {
-        top: 800px;
+        top: 720px;
+        width: 80%;
         
     }
 
@@ -254,4 +297,16 @@ footer .logo {
         grid-template-columns: 1fr;
     }
     
+    #get-started .email {
+        padding:10px 30%;
+
+     } 
+     .get-started-btn{
+        padding:10px 5%;
+        width: 90%;
+        margin: 12px auto;
+    }
+    .social-logo {
+        margin-left: auto;
+    }
   }
