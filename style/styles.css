@@ -79,7 +79,7 @@ section, footer {
     padding-top: 5%;
 }
 .btn , .get-started-btn {
-    background-color: hsl(198, 60%, 50%);
+    background: linear-gradient(to right , hsl(176, 68%, 64%), hsl(198, 60%, 50%) );
 	border-radius:28px;
 	display:inline-block;
 	cursor:pointer;
@@ -93,8 +93,8 @@ section, footer {
 .get-started-btn {
     padding:15px 5%;
 }
-.btn:hover {
-    background-color: hsl(176, 68%, 64%);
+.btn:hover, .get-started-btn:hover {
+    background: hsl(176, 68%, 64%);
     color: white;
 
 }
